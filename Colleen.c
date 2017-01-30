@@ -1,4 +1,7 @@
 #include <stdio.h>
-char*i="#include<stdio.h>",q='"',n='\n',*p=
-"int main(){return!printf(\"%s%cchar*i=\"%s\",q='%c',n='\\n',*p=%c%s%c%s%c\",p);})";
-int main(){return!printf("%s%cchar*i=\"%s\",q='%c',n='\\n',*p=%c%s%c%s%c",i,n,i,q,n,p,n,p,n);}
+// comment1
+void func(){}
+int main(){
+//comment2
+char*p="#include <stdio.h>%c// comment1%cvoid func(){}%cint main(){%c//comment2%cchar*p=%c%s%c;%cprintf(p,10,10, 10,10,10,34,p,34,10,10,10);}%c";
+printf(p,10,10, 10,10,10,34,p,34,10,10,10);}
