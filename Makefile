@@ -10,7 +10,7 @@
 #                                                                              #
 #******************************************************************************#
 
-NAME = Grace
+NAME = Sully
 FILE = Grace_kid.c
 OBJPATH = obj
 SRCPATH = .
@@ -27,7 +27,7 @@ CFLAGS = $(BASEFLAGS) -Werror -O2 -g
 LFTCALL = all
 LFTRE = re
 
-SRCSFILES = Grace.c \
+SRCSFILES = Sully.c \
 
 
 SRC = $(addprefix $(SRCPATH)/,$(SRCSFILES))
@@ -56,7 +56,7 @@ clean:
 
 fclean: clean
 	$(RM) $(NAME)
-	$(RM) $(FILE)
+	$(RM) Sully_5.c
 
 
 re: fclean all
